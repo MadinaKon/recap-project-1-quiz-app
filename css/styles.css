@@ -34,17 +34,20 @@ main {
 }
 
 .question-card {
-  /* width: 90%; */
-  height: 50%;
+  /* width: 90%;
+    height: 50%;
+     align-items: center;
+      height: 100%;
+  */
+
   position: relative;
   background-color: green;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .question-card--title {
   background-color: pink;
-  width: 80%;
+  /* width: 80%; */
 }
 
 .question-card--question {
@@ -74,6 +77,7 @@ main {
 button[type="button"] {
   background-color: aquamarine;
   height: 10%;
+  width: 50%;
 }
 
 .navbar-list {
@@ -88,18 +92,6 @@ button[type="button"] {
   align-content: space-between;
 }
 
-/* .navbar-list {
-  position: fixed;
-  width: 100px;
-  flex-wrap: nowrap;
-}
-
-.navbar-list--item {
-  width: 50%;
-  align-content: space-between;
-  justify-content: center;
-} */
-
 #answer-1,
 #answer-2 {
   width: 100%;
@@ -111,5 +103,10 @@ button[type="button"] {
 }
 
 .card__bookmark:hover svg path {
-  fill: #fff;
+  fill: black;
+}
+
+nav ul li a.current {
+  font-weight: bold;
+  color: orange;
 }
