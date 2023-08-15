@@ -38,6 +38,10 @@ h1 {
   width: 100px;
 }
 
+.navbar-list {
+  display: flex;
+}
+
 .navbar-list--item {
   width: 50%;
 }
