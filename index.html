@@ -14,13 +14,23 @@
     <main>
 <!-- question card -->
 <section class="question-card">
+    <div id="answer">
+       Here is an answer
+        </div>
     <!-- question-->
     <h2 class="question-card--title">What property flips the axes in flexbox?</h2>
     <!-- question bookmark -->
-    <button class="card__bookmark"> <button class="question-card--bookmark"><img src="./images/svg/icon-bookmark.svg" alt="bookmark icon" /></button></button>
-    <p class="card__text">
+    
+    <!-- <button class="card__bookmark"> <button class="question-card--bookmark"><img src="./images/svg/icon-bookmark.svg" alt="bookmark icon" /></button></button>
+    -->
+    <button class="card__bookmark"> <button class="question-card--bookmark">
+        <img src="./images/svg/bookmarks.svg" alt="bookmark icon" />
+    </button></button>
+   
+
+    <!-- <p class="card__text">
     lorem ipsum
-    </p>
+    </p> -->
     <!-- question categories -->
     <section class="question-card--category">
         <button class="question-card--tag">#html</button
@@ -45,7 +55,7 @@
             <li class="navbar-list--item"><a href="#profile">  <img src="./images/svg/icon-profile.svg" alt="profile icon" /></a></li>
           </ul>
     </nav>
-    <script>
+    <!-- <script>
         function myFunction() {
          if(document.getElementById("question-card--button").innerHTML === "Show Answer") {
             document.getElementById("question-card--button").innerHTML = "Hide Answer"
@@ -53,7 +63,26 @@
             document.getElementById("question-card--button").innerHTML = "Show Answer"
          }
         }
-        </script>
+        </script> -->
+
+        <script>
+            function myFunction() {
+              let x = document.getElementById("answer")
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+
+            function buttonChange() {
+         if(document.getElementById("question-card--button").innerHTML === "Show Answer") {
+            document.getElementById("question-card--button").innerHTML = "Hide Answer"
+         } else{
+            document.getElementById("question-card--button").innerHTML = "Show Answer"
+         }
+        }
+            </script>
   </body>
  
 </html>
