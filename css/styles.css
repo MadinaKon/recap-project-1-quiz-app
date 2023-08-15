@@ -52,13 +52,8 @@ main {
 
 .question-card--category {
   display: flex;
-}
-
-.question-card--tag {
-  padding: 15px;
-  height: 20px;
-  justify-content: center;
-  text-align: center;
+  flex-wrap: wrap;
+  align-self: start;
 }
 
 .question-card--bookmark {
@@ -72,7 +67,7 @@ main {
 
 button[type="button"] {
   background-color: aquamarine;
-  height: 20px;
+  height: 10%;
 }
 
 nav {
