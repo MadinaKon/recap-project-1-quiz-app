@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  border-style: solid;
+}
+.question-card {
+  display: flex;
+  border-style: solid;
+}
+
+.question-card--button {
+  padding: 15px;
+}
+
+.question-card--tag {
+  padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  border-style: solid;
+  width: 100px;
+}
+
+.navbar-list--item {
+  width: 50%;
+}
