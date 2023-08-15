@@ -30,10 +30,11 @@ main {
   width: 100vw;
   height: 60vh;
   background: teal;
+  flex: 1;
 }
 
 .question-card {
-  width: 90%;
+  /* width: 90%; */
   height: 50%;
   position: relative;
   background-color: green;
@@ -57,12 +58,16 @@ main {
   align-self: start;
 }
 
+.question-card--tag {
+  flex-direction: column;
+}
+
 .question-card--bookmark {
   position: absolute;
   right: 20px;
 }
 .question-card--button {
-  padding: 15px;
+  padding: 15px 0;
   height: 20px;
 }
 
@@ -71,15 +76,26 @@ button[type="button"] {
   height: 10%;
 }
 
-nav {
+footer {
   background: yellow;
   display: flex;
-
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: fixed;
   gap: 20px;
+  align-content: space-between;
 }
 
 .navbar-list {
-  /* display: flex; */
+  display: flex;
+  position: fixed;
+  width: 100px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+/* .navbar-list {
+  position: fixed;
   width: 100px;
   flex-wrap: nowrap;
 }
@@ -88,12 +104,13 @@ nav {
   width: 50%;
   align-content: space-between;
   justify-content: center;
-}
+} */
 
 #answer-1,
 #answer-2 {
   width: 100%;
   padding: 50px 0;
+
   text-align: center;
   background-color: lightblue;
   margin-top: 20px;
