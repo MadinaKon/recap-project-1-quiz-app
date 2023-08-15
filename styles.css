@@ -12,12 +12,12 @@ ul {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
 .question-card {
   display: flex;
   border-color: black;
   width: 2px;
-}
-
-.question-card--title {
-  background-color: blue;
+  border-style: solid;
 }
