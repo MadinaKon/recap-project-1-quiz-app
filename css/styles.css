@@ -76,22 +76,16 @@ button[type="button"] {
   height: 10%;
 }
 
-footer {
+.navbar-list {
+  width: 100%;
+  flex-direction: row;
   background: yellow;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  /* flex-wrap: nowrap; */
   position: fixed;
   gap: 20px;
   align-content: space-between;
-}
-
-.navbar-list {
-  display: flex;
-  position: fixed;
-  width: 100px;
-  flex-wrap: nowrap;
-  flex-direction: row;
 }
 
 /* .navbar-list {
