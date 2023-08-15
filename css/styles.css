@@ -43,6 +43,7 @@ main {
 }
 .question-card--title {
   background-color: pink;
+  width: 80%;
 }
 
 .question-card--question {
@@ -72,17 +73,13 @@ button[type="button"] {
 
 nav {
   background: yellow;
-}
-
-.navbar {
   display: flex;
-  border-style: solid;
-  width: 100%;
-  background: teal;
+
+  gap: 20px;
 }
 
 .navbar-list {
-  display: flex;
+  /* display: flex; */
   width: 100px;
   flex-wrap: nowrap;
 }
@@ -93,10 +90,15 @@ nav {
   justify-content: center;
 }
 
-#answer {
+#answer-1,
+#answer-2 {
   width: 100%;
   padding: 50px 0;
   text-align: center;
   background-color: lightblue;
   margin-top: 20px;
+}
+
+.card__bookmark:hover svg path {
+  fill: #fff;
 }

@@ -14,17 +14,19 @@
     <main>
 <!-- question card -->
 <section class="question-card">
-    <div id="answer">
-       Here is an answer
+    <div id="answer-1">
+        The flexible box layout module, usually referred to as flexbox, was designed as a one-dimensional layout model, and as a method that could offer space distribution between items in an interface and powerful alignment capabilities. This article gives an outline of the main features of flexbox, which we will be exploring in more detail in the rest of these guides.
+
+
         </div>
     <!-- question-->
-    <h2 class="question-card--title">What property flips the axes in flexbox?</h2>
+    <h2 class="question-card--title">What is flexbox?</h2>
     <!-- question bookmark -->
     
     <!-- <button class="card__bookmark"> <button class="question-card--bookmark"><img src="./images/svg/icon-bookmark.svg" alt="bookmark icon" /></button></button>
     -->
     <button class="card__bookmark"> <button class="question-card--bookmark">
-        <img src="./images/svg/bookmarks.svg" alt="bookmark icon" />
+        <img src="./images/svg/icon-bookmark.svg" alt="bookmark icon" />
     </button></button>
    
 
@@ -38,9 +40,37 @@
             ><button class="question-card--tag">#css</button>
     </section>
  <!-- question button show answer -->
- <button type="button" id="question-card--button" onclick="myFunction()">Show answer</button>
+ <button type="button" id="question-card--button-1" onclick="toggleAnswer('answer-1', 'question-card--button-1')">Show answer</button>
   </section>
   
+  <section class="question-card">
+    <div id="answer-2">
+        CSS Media queries are a way to target browser by certain characteristics, features, and user preferences, then apply styles or run other code based on those things.
+
+        </div>
+    <!-- question-->
+    <h2 class="question-card--title">What is CSS media queries?</h2>
+    <!-- question bookmark -->
+    
+    <!-- <button class="card__bookmark"> <button class="question-card--bookmark"><img src="./images/svg/icon-bookmark.svg" alt="bookmark icon" /></button></button>
+    -->
+    <button class="card__bookmark"> <button class="question-card--bookmark">
+        <img src="./images/svg/icon-bookmark.svg" alt="bookmark icon" />
+    </button></button>
+   
+
+    <!-- <p class="card__text">
+    lorem ipsum
+    </p> -->
+    <!-- question categories -->
+    <section class="question-card--category">
+        <button class="question-card--tag">#html</button
+            ><button class="question-card--tag">#flexbox</button
+            ><button class="question-card--tag">#css</button>
+    </section>
+ <!-- question button show answer -->
+ <button type="button" id="question-card--button-2" onclick="toggleAnswer('answer-2', 'question-card--button-2')">Show answer</button>
+  </section>
     </main>
     <nav>
         <ul class="navbar-list">
@@ -55,34 +85,55 @@
             <li class="navbar-list--item"><a href="#profile">  <img src="./images/svg/icon-profile.svg" alt="profile icon" /></a></li>
           </ul>
     </nav>
-    <!-- <script>
-        function myFunction() {
-         if(document.getElementById("question-card--button").innerHTML === "Show Answer") {
-            document.getElementById("question-card--button").innerHTML = "Hide Answer"
-         } else{
-            document.getElementById("question-card--button").innerHTML = "Show Answer"
-         }
-        }
-        </script> -->
+        <!-- <script>
+            function showAnswer1() {
+              let answer = document.getElementById("answer-1")
+              if (answer.style.display === "none" || document.getElementById("question-card--button-1").innerHTML === "Show Answer" ) {
+                document.getElementById("question-card--button-1").innerHTML = "Hide Answer"
 
-        <script>
-            function myFunction() {
-              let x = document.getElementById("answer")
-              if (x.style.display === "none") {
-                x.style.display = "block";
+
+                
+                answer.style.display = "block";
+               
               } else {
-                x.style.display = "none";
+                document.getElementById("question-card--button-1").innerHTML = "Show Answer"
+                answer.style.display = "none";
+               
               }
             }
 
-            function buttonChange() {
-         if(document.getElementById("question-card--button").innerHTML === "Show Answer") {
-            document.getElementById("question-card--button").innerHTML = "Hide Answer"
-         } else{
-            document.getElementById("question-card--button").innerHTML = "Show Answer"
-         }
-        }
-            </script>
+            function showAnswer2() {
+              let answer = document.getElementById("answer-2")
+              if (answer.style.display === "none" || document.getElementById("question-card--button-2").innerHTML === "Show Answer" ) {
+                document.getElementById("question-card--button-2").innerHTML = "Hide Answer"
+
+
+                
+                answer.style.display = "block";
+               
+              } else {
+                document.getElementById("question-card--button-2").innerHTML = "Show Answer"
+                answer.style.display = "none";
+               
+              }
+            }
+            </script> -->
+
+            <script>
+                function toggleAnswer(answerId, buttonId) {
+                  const answer = document.getElementById(answerId);
+                  const button = document.getElementById(buttonId);
+            
+                  if (answer.style.display === "none" || button.innerHTML === "Show answer") {
+                    button.innerHTML = "Hide answer";
+                    answer.style.display = "block";
+                  } else {
+                    button.innerHTML = "Show answer";
+                    answer.style.display = "none";
+                  }
+                }
+              </script>
+
   </body>
- 
+
 </html>
