@@ -3,8 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Quiz App</h1>
+    </header>
+    <main>
+<!-- question card -->
+<section class="question-card">
+    <div id="answer-1">
+        The flexible box layout module, usually referred to as flexbox, was designed as a one-dimensional layout model, and as a method that could offer space distribution between items in an interface and powerful alignment capabilities. This article gives an outline of the main features of flexbox, which we will be exploring in more detail in the rest of these guides.
+
+
+        </div>
+    <!-- question-->
+    <h2 class="question-card--title">What is flexbox?</h2>
+    <!-- question bookmark -->
+    
+    <!-- <button class="card__bookmark"> <button class="question-card--bookmark"><img src="./images/svg/icon-bookmark.svg" alt="bookmark icon" /></button></button>
+    -->
+    <button class="card__bookmark"> <button class="question-card--bookmark">
+        <img src="./images/svg/icon-bookmark.svg" alt="bookmark icon" />
+    </button></button>
+   
+
+    <!-- <p class="card__text">
+    lorem ipsum
+    </p> -->
+    <!-- question categories -->
+    <section class="question-card--category">
+        <button class="question-card--tag">#html</button
+            ><button class="question-card--tag">#flexbox</button
+            ><button class="question-card--tag">#css</button>
+    </section>
+ <!-- question button show answer -->
+ <button type="button" id="question-card--button-1" onclick="toggleAnswer('answer-1', 'question-card--button-1')">Show answer</button>
+  </section>
+  
+  <section class="question-card">
+    <div id="answer-2">
+        CSS Media queries are a way to target browser by certain characteristics, features, and user preferences, then apply styles or run other code based on those things.
+
+        </div>
+    <!-- question-->
+    <h2 class="question-card--title">What is CSS media queries?</h2>
+    <!-- question bookmark -->
+    
+    <!-- <button class="card__bookmark"> <button class="question-card--bookmark"><img src="./images/svg/icon-bookmark.svg" alt="bookmark icon" /></button></button>
+    -->
+    <button class="card__bookmark"> <button class="question-card--bookmark">
+        <img src="./images/svg/bookmark-fill.svg" alt="bookmark icon" />
+    </button></button>
+   
+
+    <!-- <p class="card__text">
+    lorem ipsum
+    </p> -->
+    <!-- question categories -->
+    <section class="question-card--category">
+        <button class="question-card--tag">#html</button
+            ><button class="question-card--tag">#flexbox</button
+            ><button class="question-card--tag">#css</button>
+    </section>
+ <!-- question button show answer -->
+ <button type="button" id="question-card--button-2" onclick="toggleAnswer('answer-2', 'question-card--button-2')">Show answer</button>
+  </section>
+
+  
+    </main>
+
+
+    <nav>
+        <ul class="navbar-list">
+            <li class="navbar-list--item">
+              <a href="./index.html"  class="current"> Homepage</a>
+             
+                <img src="./images/svg/icon-home.svg" alt="home icon" />
+              </a>
+            </li>
+            <li class="navbar-list--item"><a href="#bookmark"> Bookmark
+                 <img src="./images/svg/icon-bookmark.svg" alt="bookmark icon" />
+                </a></li>
+            <li class="navbar-list--item"><a href="#profile"> Profile <img src="./images/svg/icon-profile.svg" alt="profile icon" /></a></li>
+          </ul>
+    </nav>
+
+
+            <script>
+                function toggleAnswer(answerId, buttonId) {
+                  const answer = document.getElementById(answerId);
+                  const button = document.getElementById(buttonId);
+            
+                  if (answer.style.display === "none" || button.innerHTML === "Show answer") {
+                    button.innerHTML = "Hide answer";
+                    answer.style.display = "block";
+                  } else {
+                    button.innerHTML = "Show answer";
+                    answer.style.display = "none";
+                  }
+                }
+              </script>
+
+  </body>
+
 </html>
