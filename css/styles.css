@@ -31,15 +31,13 @@ main {
   height: 60vh;
   background: teal;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  /* margin: 80px; */
 }
 
 .question-card {
-  /* width: 90%;
-    height: 50%;
-     align-items: center;
-      height: 100%;
-  */
-
   position: relative;
   background-color: green;
   display: flex;
@@ -89,6 +87,7 @@ button[type="button"] {
   /* flex-wrap: nowrap; */
   position: fixed;
   gap: 20px;
+  bottom: 0;
   align-content: space-between;
 }
 
