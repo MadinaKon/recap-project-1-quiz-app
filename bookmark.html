@@ -12,30 +12,8 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-<!-- question card -->
-<section class="question-card">
-    <div id="answer-1">
-        The flexible box layout module, usually referred to as flexbox, was designed as a one-dimensional layout model, and as a method that could offer space distribution between items in an interface and powerful alignment capabilities. This article gives an outline of the main features of flexbox, which we will be exploring in more detail in the rest of these guides.
 
-
-        </div>
-    <!-- question-->
-    <h2 class="question-card--title">What is flexbox?</h2>
-    <!-- question bookmark -->
-
-    <button class="question-card--bookmark">
-        <img src="./images/svg/icon-bookmark.svg" alt="bookmark icon" />
-    </button>
-   
-    <!-- question categories -->
-    <section class="question-card--category">
-        <button class="question-card--tag">#html</button
-            ><button class="question-card--tag">#flexbox</button
-            ><button class="question-card--tag">#css</button>
-    </section>
- <!-- question button show answer -->
- <button type="button" id="question-card--button-1" onclick="toggleAnswer('answer-1', 'question-card--button-1')">Show answer</button>
-  </section>
+        
   
   <section class="question-card">
     <div id="answer-2">
@@ -46,11 +24,16 @@
     <h2 class="question-card--title">What is CSS media queries?</h2>
     <!-- question bookmark -->
     
-  
-        <button class="question-card--bookmark">
+    <!-- <button class="card__bookmark"> <button class="question-card--bookmark"><img src="./images/svg/icon-bookmark.svg" alt="bookmark icon" /></button></button>
+    -->
+    <button class="card__bookmark"> <button class="question-card--bookmark">
         <img src="./images/svg/bookmark-fill.svg" alt="bookmark icon" />
-    </button>
+    </button></button>
    
+
+    <!-- <p class="card__text">
+    lorem ipsum
+    </p> -->
     <!-- question categories -->
     <section class="question-card--category">
         <button class="question-card--tag">#html</button
@@ -68,12 +51,12 @@
     <nav>
         <ul class="navbar-list">
             <li class="navbar-list--item">
-              <a href="./index.html"  class="current"> Homepage</a>
+              <a href="./index.html"> Homepage</a>
              
                 <img src="./images/svg/icon-home.svg" alt="home icon" />
               </a>
             </li>
-            <li class="navbar-list--item"><a href="./bookmark.html"> Bookmark
+            <li class="navbar-list--item"><a href="./bookmark.html"  class="current"> Bookmark
                  <img src="./images/svg/icon-bookmark.svg" alt="bookmark icon" />
                 </a></li>
             <li class="navbar-list--item"><a href="#profile"> Profile <img src="./images/svg/icon-profile.svg" alt="profile icon" /></a></li>

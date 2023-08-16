@@ -29,21 +29,23 @@ a {
 main {
   width: 100vw;
   height: 60vh;
-  background: teal;
+
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  /* margin: 80px; 
+   background: teal;
+  */
 }
 
 .question-card {
-  /* width: 90%;
-    height: 50%;
-     align-items: center;
-      height: 100%;
-  */
-
   position: relative;
-  background-color: green;
+  background-color: beige;
   display: flex;
   flex-direction: column;
+  margin: 100px;
+  padding: 100px;
 }
 .question-card--title {
   background-color: pink;
@@ -68,6 +70,7 @@ main {
 .question-card--bookmark {
   position: absolute;
   right: 20px;
+  top: 0;
 }
 .question-card--button {
   padding: 15px 0;
@@ -76,20 +79,20 @@ main {
 
 button[type="button"] {
   background-color: aquamarine;
-  height: 10%;
   width: 50%;
 }
 
 .navbar-list {
   width: 100%;
-  flex-direction: row;
   background: yellow;
   display: flex;
   justify-content: space-between;
   /* flex-wrap: nowrap; */
   position: fixed;
   gap: 20px;
+  bottom: 0;
   align-content: space-between;
+  margin: 0;
 }
 
 #answer-1,
@@ -100,10 +103,6 @@ button[type="button"] {
   text-align: center;
   background-color: lightblue;
   margin-top: 20px;
-}
-
-.card__bookmark:hover svg path {
-  fill: black;
 }
 
 nav ul li a.current {
