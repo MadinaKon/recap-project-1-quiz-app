@@ -79,13 +79,11 @@ main {
 
 button[type="button"] {
   background-color: aquamarine;
-  height: 10%;
   width: 50%;
 }
 
 .navbar-list {
   width: 100%;
-  flex-direction: row;
   background: yellow;
   display: flex;
   justify-content: space-between;
@@ -94,6 +92,7 @@ button[type="button"] {
   gap: 20px;
   bottom: 0;
   align-content: space-between;
+  margin: 0;
 }
 
 #answer-1,
