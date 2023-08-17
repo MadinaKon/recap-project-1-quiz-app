@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  background: purple;
+  background: goldenrod;
   /* height: 30%; */
   height: 10%;
   justify-content: center;
@@ -28,8 +28,6 @@ a {
 
 main {
   width: 100vw;
-
-  /* flex: 1; */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -46,6 +44,14 @@ main {
     padding: 100px;
     flex-wrap: wrap;
   }
+  .question-card--bookmark {
+    position: absolute;
+    top: 100px;
+
+    /* 
+     right: 20px;
+    top: 0; */
+  }
 }
 
 /* @desktop  */
@@ -59,11 +65,16 @@ main {
     padding: 100px;
     flex-wrap: wrap;
   }
+
+  .question-card--bookmark {
+    position: absolute;
+    right: 20px;
+    top: 0;
+  }
 }
 
 .question-card--title {
   background-color: pink;
-  /* width: 80%; */
 }
 
 .question-card--question {
@@ -81,18 +92,13 @@ main {
   flex-direction: column;
 }
 
-.question-card--bookmark {
-  position: absolute;
-  right: 20px;
-  top: 0;
-}
 .question-card--button {
   padding: 15px 0;
   height: 20px;
 }
 
 button[type="button"] {
-  background-color: aquamarine;
+  background-color: burlywood;
   width: 50%;
 }
 
@@ -101,7 +107,6 @@ button[type="button"] {
   background: yellow;
   display: flex;
   justify-content: space-between;
-  /* flex-wrap: nowrap; */
   position: fixed;
   gap: 20px;
   bottom: 0;
