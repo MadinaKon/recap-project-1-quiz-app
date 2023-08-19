@@ -1,0 +1,62 @@
+/* @mobile  */
+@media screen and (min-width: 600px) {
+  .question-card {
+    position: relative;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    flex-wrap: wrap;
+  }
+  .question-card--bookmark {
+    position: absolute;
+    top: 100px;
+
+    /* 
+         right: 20px;
+        top: 0; */
+  }
+}
+
+/* @desktop  */
+@media screen and (min-width: 1200px) {
+  .question-card {
+    position: relative;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+    padding: 100px;
+    flex-wrap: wrap;
+  }
+
+  .question-card--bookmark {
+    position: absolute;
+    right: 20px;
+    top: 0;
+  }
+}
+
+.question-card--title {
+  background-color: pink;
+}
+
+.question-card--question {
+  background-color: aquamarine;
+  width: 100%;
+}
+
+.question-card--category {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: start;
+}
+
+.question-card--tag {
+  flex-direction: column;
+}
+
+.question-card--button {
+  padding: 15px 0;
+  height: 20px;
+}

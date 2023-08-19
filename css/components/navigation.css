@@ -1,0 +1,16 @@
+.navbar-list {
+  width: 100%;
+  background: yellow;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  gap: 20px;
+  bottom: 0;
+  align-content: space-between;
+  margin: 0;
+}
+
+nav ul li a.current {
+  font-weight: bold;
+  color: orange;
+}
