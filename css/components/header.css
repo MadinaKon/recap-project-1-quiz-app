@@ -5,4 +5,5 @@ header {
   justify-content: center;
   text-align: center;
   position: fixed;
+  z-index: 100;
 }
