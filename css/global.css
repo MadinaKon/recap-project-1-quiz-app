@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark-blue: #4682a9;
+  --light-blue: #91c8e4;
+  --light-beige: #f5f6f6;
+  --dark-orange: orange;
+  --light-pink: pink;
+  --light-aquamarine: aquamarine;
+}
+
+body {
+  font-size: 18px;
+  width: 100vw;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 50px;
+}
