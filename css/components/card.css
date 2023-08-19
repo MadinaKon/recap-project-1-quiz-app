@@ -2,7 +2,7 @@
 @media screen and (min-width: 600px) {
   .question-card {
     position: relative;
-    background-color: beige;
+    background-color: var(--light-beige);
     display: flex;
     flex-direction: column;
     padding: 100px;
@@ -22,7 +22,7 @@
 @media screen and (min-width: 1200px) {
   .question-card {
     position: relative;
-    background-color: beige;
+    background-color: var(--light-beige);
     display: flex;
     flex-direction: column;
     margin: 100px;
@@ -38,11 +38,11 @@
 }
 
 .question-card--title {
-  background-color: pink;
+  background-color: var(--light-pink);
 }
 
 .question-card--question {
-  background-color: aquamarine;
+  background-color: var(--light-aquamarine);
   width: 100%;
 }
 

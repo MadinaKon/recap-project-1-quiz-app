@@ -4,12 +4,19 @@
   padding: 0;
 }
 
-body {
-  font-size: 18px;
-
-  width: 100vw;
+:root {
+  --dark-blue: #4682a9;
+  --light-blue: #91c8e4;
+  --light-beige: #f5f6f6;
+  --dark-orange: orange;
+  --light-pink: pink;
+  --light-aquamarine: aquamarine;
 }
 
+body {
+  font-size: 18px;
+  width: 100vw;
+}
 
 ul {
   list-style-type: none;
@@ -26,5 +33,3 @@ main {
   flex-wrap: wrap;
   gap: 50px;
 }
-
-

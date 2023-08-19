@@ -1,6 +1,6 @@
 .navbar-list {
   width: 100%;
-  background: yellow;
+  background: var(--light-blue);
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -12,5 +12,5 @@
 
 nav ul li a.current {
   font-weight: bold;
-  color: orange;
+  color: var(--dark-orange);
 }

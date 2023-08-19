@@ -1,6 +1,5 @@
 header {
-  background: goldenrod;
-  /* height: 30%; */
+  background: var(--dark-blue);
   width: 100%;
   height: 10%;
   justify-content: center;
